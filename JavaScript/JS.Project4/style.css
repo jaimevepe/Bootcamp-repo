@@ -12,4 +12,21 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover; 
+    
+}
+
+.center{
+    position: absolute;
+    text-align: center;
+    font-size: 54px;
+    color: white;
+    top: 200px;
+    left: 280px;
+    width: 600px;
+   
+}
+ 
+p {
+    text-transform: uppercase;
+    font-family: serif;
 }
