@@ -1,32 +1,39 @@
-var catArr = ["images/cat1.jpg", "images/cat2.jpg", "images/cat3.jpg"];
-var i = 1;
+var picArr = ["images/1.jpg", "images/2.jpg", "images/3.jpg", "images/4.jpg", "images/5.jpg", "images/6.jpg"];
+var i = 0;
 
 var img = document.querySelector("img")
-var but = document.getElementById("next")
-var but2 = document.getElementById("previous")
+var next = document.getElementById("next")
+var previous = document.getElementById("previous")
 
 
 
 
 // For Next button
 
-but.addEventListener("click", function() {
-    document.querySelector("img").setAttribute("src", catArr[i]);
-   i ++;
-   console.log(catArr[i]);
-   console.log(i);
-  if (i === catArr.length){
-      i = 0;
-  };
+next.addEventListener("click", function() {
+   
+  if (i !== picArr.length-1) {
+      i++;
+      document.querySelector("img").setAttribute("src", picArr[i]);
+       console.log(picArr[i]);
+       console.log(i);
+  
+  } else {
+    i = 0;
+  }
 } );
 
 // For Previous button
 
-but2.addEventListener("click", function() {
-    img.setAttribute("src", catArr[i]);
-    i --;
+previous.addEventListener("click", function() {
+  
+  i--
+   img.setAttribute("src", picArr[i]);
+    console.log(picArr[i]);
+    console.log(i);
   if (i == -1){
-      i = catArr.length -1;
+      i = picArr.length -1;
+      
   }
 });
 
