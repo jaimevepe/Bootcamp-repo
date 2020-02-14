@@ -1,0 +1,19 @@
+/* *{
+    margin: 0;
+    padding:0;
+} */
+
+.container {
+    border: solid black 1px;
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;    
+    background-color: cyan;
+    border-radius: 5px;
+}
+
+textarea {
+    height: 100px;
+    width: 250px;
+
+}

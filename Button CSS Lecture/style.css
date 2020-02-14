@@ -1,0 +1,29 @@
+button {
+    display: block;
+    position: relative;
+    outline: none;
+    background-color: #5C6BC0;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    margin: 0 auto;
+    font-family: monospace;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 30px 90px;
+    box-shadow: 0 6px #303f9f;
+}
+
+button:hover {
+    box-shadow: 0 3px #303f9f;
+    top: 2px;
+     /*You cant use Top without Position: relative; */
+
+}
+
+#button:active {
+      top: 6px;
+      box-shadow: 0 1px #666;
+} 
+

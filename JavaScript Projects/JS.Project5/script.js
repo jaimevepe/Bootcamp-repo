@@ -11,30 +11,29 @@ var previous = document.getElementById("previous")
 // For Next button
 
 next.addEventListener("click", function() {
-   
-  if (i !== picArr.length-1) {
-      i++;
-      document.querySelector("img").setAttribute("src", picArr[i]);
-       console.log(picArr[i]);
-       console.log(i);
-  
-  } else {
-    i = 0;
-  }
-} );
+  img.setAttribute("src", picArr[i])
+  i ++ ;
+  if (i == picArr.length) {
+      i = 0;
+  } 
+  console.log(i)
+  console.log(picArr[i])
+});
+
 
 // For Previous button
 
 previous.addEventListener("click", function() {
+  img.setAttribute("src", picArr[i]);
+  i -- ;
+  if (i === -1) {
+    i = picArr.length -1;
+  } else if (i === 0) {
+    i = 0;
+  };
   
-  i--
-   img.setAttribute("src", picArr[i]);
-    console.log(picArr[i]);
-    console.log(i);
-  if (i == -1){
-      i = picArr.length -1;
-      
-  }
+  console.log(i);
+  console.log(picArr[i]);
 });
 
 
