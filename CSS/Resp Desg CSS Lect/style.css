@@ -5,8 +5,8 @@
 }
 
 main {
-    width: 960px;
-    height: 800px;
+    width: 100vw;
+    height: 100vh;
     margin: auto;
 }
 nav {
@@ -14,24 +14,25 @@ nav {
     overflow: hidden;
     padding: 22px 60px;
     color: white;
+    height: 20vh;
     
 
 }
 
 nav > div {
     background: #29335c;
-    width: 200px;
+    width: 18vmax;
     float: right;
     display: inline;
     text-align: center;
     margin: 5px;
     line-height: 60px;
-    font-size: 32px;
+    font-size: 30px;
     font-family: sans-serif;
 }
 
 article {
-    width: 600px;
+    width: 55vw;
     height: 400px;
     display: inline-block;
     background-color: red;
@@ -39,9 +40,10 @@ article {
     text-align: center;
     color: white;
 }
+
 aside {
     height: 400px;
-    width: 340px;
+    width: 43vw;
     background-color: darkmagenta;
     display: inline-block;
     margin: 20px auto;
@@ -52,25 +54,55 @@ aside {
 
 footer {
     height: 120px;
-    width: 960px;
+    width: 100vw;
     background-color: dodgerblue;
     text-align: center;
     color: white;
 }
 
-/* nav a {
-    float: right;
-    color: #f2f2f2;
-    text-decoration: none;
-    font-size: 20px;
-    padding: 33px 60px;
-    background-color: darkblue;
-    margin: 10px;
-    
-    text-align: center;
-    
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+   article {
+       display: inline-block;
+       width: 100vw;
+       margin-top: 0;
+       margin-bottom: 0;
+   }
+   aside {
+       display: inline-block;
+       width: 100vw;
+       margin-top: 0;
+       margin-bottom: 0;
+   }
+   footer {
+       display: inline-block;
+       width: 100vw;
+   }
+   nav {
+       height: 15vh;
+   }
+
 }
-nav a:hover {
-    background: #039be5;
-    color: #ffd54f;
-} */
+@media only screen and (min-device-width : 375px) and (max-device-width : 736px) {
+    article {
+        display: inline-block;
+        width: 100vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    aside {
+        display: inline-block;
+        width: 100vw;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    footer {
+        display: inline-block;
+        width: 100vw;
+    }
+    nav > div {
+        display: inline-block;
+        vertical-align: middle;
+        height: 9vh;
+        width: 20vw;
+    }
+}
