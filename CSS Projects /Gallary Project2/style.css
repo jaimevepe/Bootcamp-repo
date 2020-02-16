@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+main {
+    width: 100vw;
+    height: 960px;
+}
+img {
+    display: inline-block;
+    position: relative;
+    left: 8rem;
+    width: 25vw;
+    margin: 10px;
+    
+}
+@media only screen and (min-width : 768px) and (max-width : 900px) {
+   
+    
+    img {
+        width: 35vw;
+        left: 6rem;
+
+    }
+}
+@media only screen and (min-width : 414px) and (max-width : 736px) {
+    img {
+        width: 60vw;
+        left: 4.5rem;
+    }
+}
