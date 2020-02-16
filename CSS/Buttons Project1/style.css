@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+button {
+    display: inline-block;
+    position: relative;
+    right: 200px;
+    color: white;
+    width: 200px;
+    height: 100px;
+    margin: 10px 10px;
+    float: right;
+    border-radius: 10px;
+    border: solid 1px black;
+    font-size: 25px;
+}
+.yellow {
+    background-color: #FFEB3B;
+}
+.green {
+    background-color: #4CAF50;
+}
+.red {
+    background-color: #F44336;
+}
+.blue {
+    background-color: #0D47A1;
+}
