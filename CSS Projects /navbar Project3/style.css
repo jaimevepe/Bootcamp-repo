@@ -40,7 +40,6 @@ body {
     background-color: lightblue;
     margin-top: 15px;
     margin-left: -15px;
-    
 }
 .navbar ul li:hover .sub-menu ul {
     display: block;
