@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="row  mt-5 " style="height: 250px;">
+          <div class="col-sm-3  bg-danger"></div>
+          <div class="col-sm-3  bg-warning"></div>
+          <div class="col-sm-3  bg-success"></div>
+          <div class="col-sm-3  bg-primary"></div>
+        </div>
+      </div>   
+  <br>
+
+  <!-- div with in a div -->
+  <div class="container">
+    <div class="row  mt-5 ">
+        <div class="col-lg-6 bg-primary" style="height: 90px;">
+            <div class="row">
+                <div class="col-lg-6" style="height: 45px; background: pink;"></div>
+                <div class="col-lg-6" style="height: 45px; background: yellow;"></div>
+            </div>
+        </div>
+        <div class="col-lg-6 bg-danger" style="height: 90px;"></div>
+     </div>
+  </div> 
+<br>
+<br>
+
+<!-- First div will act as the border, add rest of 3 div's with is the first -->
+<div class="container">
+    <div class="row border border-dark align-items-center" style="height: 400px;">
+      <div class="col border border-primary ">
+        <h3>One of three columns</h3>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur quas ea voluptatibus debitis minima dolor eaque error repellendus eveniet voluptas, voluptates aliquid at dolores omnis inventore dicta
+        </p>
+
+      </div>
+      <div class="col border border-success">
+        <h3>One of three columns</h3>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt iusto nam perferendis illum culpa, libero tempora blanditiis ratione voluptates qui iste minima inventore sed doloribus modi distinctio, illo totam et.
+        </p>
+
+      </div>
+      <div class="col border border-warning">
+        <h3>One of three columns</h3>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non cupiditate in debitis blanditiis totam ducimus porro sint exercitationem dolorem eveniet? Libero odit iste maiores tempore tenetur impedit ducimus hic 
+        </p>
+        
+      </div>
+    </div>
+</div>
+  <br>
+  <br>
+
+  <!-- Nav-link will stack the divs one on top of another -->
+<div class="container">
+  <div class="row mt-5">
+    <div class="col-md-9 border border-dark rounded"> 
+      <h2>Blog Post</h2>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi, veniam ut pariatur quia iusto minima repudiandae laboriosam. Corrupti sequi possimus, est doloribus repellendus qui harum animi reprehenderit dolore, dicta ipsum!</p>
+    </div>
+  <div class="col-md-3 border rounded bg-primary">
+      <div class="nav-link">Jul 2020</div>
+      <div class="nav-link">Aug 2020</div>
+      <div class="nav-link">Sept 2020</div>
+      <div class="nav-link">Oct 2020</div>
+      <div class="nav-link">Nov 2020</div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+
+<!-- offset-md-1 well make space in between the divs by 1 column over -->
+<div class="container">
+  <div class="row">
+    <div class="card text-white bg-dark my-3 cold-md-3" style="max-width: 18rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <h5 class="card-title">Primary card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <!-- second card -->
+    
+    <div class="card border-primary my-3 offset-md-1 col-md-3" style="max-width: 18rem;">
+      <div class="card-header">Header</div>
+      <div class="card-body text-primary">
+        <h5 class="card-title">Primary card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+    <!-- third card -->
+    <div class="card col-md-3 my-3 offset-md-1" style="width: 18rem;">
+      <img src="images/Mark_II.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
