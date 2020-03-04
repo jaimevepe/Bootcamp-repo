@@ -1,0 +1,30 @@
+.img {
+  background-image: url('images/background1.jpg');
+  background-size: cover;
+}
+.text {
+    text-transform: uppercase;
+    color: white;
+    margin-top: 200px;
+    margin-left: 300px;
+    font-size: 40px;
+    font-weight: bold;
+} 
+
+.login {
+    margin-left: 460px;
+    margin-bottom: 200px;
+}
+.about {
+    background-image: url('images/background2.jpg');
+    background-size: cover;
+}
+.text2 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 50px;
+    margin-top: 230px;
+    margin-left: 240px;
+    margin-bottom: 250px;
+    font-weight: bold;
+}
