@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hotel Room Service</h1>
+        <h2>Welcome to our hotel! We hope you enjoy our stay.</h2>
+        <p>We value you as our guests! Use this online form to have a hot, delicious breakfast delivered to your room. Please fill
+        out this form before midnight so that we can make proper accomidations. All meals are served before 10am. Tipping is
+        encouraged.</p>
+        <h3>Hotel Guest Contact Info</h3>
+            <div>
+                <label for="firstname">First Name:</label>
+                <input type="text" name="firstname">
+            </div>
+            <div>
+                <label for="lastname">Last Name:</label>
+                <input type="text" name="lastname">
+            </div>
+            <div>
+                <label for="roomnumber">Room Number:</label>
+                <input type="text" name="roomnumber">
+                <span class="error">* Must enter a valid room number *</span>
+            </div>
+            <div>
+                What time would you like to be served?
+                <select name="time">
+                    <option value="6am">6AM</option>
+                    <option value="7am">7AM</option>
+                    <option value="8am">8AM</option>
+                    <option value="9am">9AM</option>
+                    <option value="10am">10am</option>
+                </select>
+            </div>
+            <div>
+                <p>Please choose your entree:</p> 
+                <select size="5" name="entree">
+                    <option value="Waffles and Chicken">Waffles and Chicken</option>
+                    <option value="Pancakes and syrup">Pancakes and syrup</option>
+                    <option value="Hash browns">Hashbrowns</option>
+                    <option value="bacon and eggs">Bacon and Eggs</option>
+                    <option value="Boring ol' toast">Boring ol' toast</option>
+                </select>
+            </div>
+            <div>
+                <span>Butter?</span>
+                <input type="radio" value="yes" name="butter"> Yes
+                <input type="radio" value="no" name="butter"> No
+                <input type="radio" name="butter" value="surprise me"> Surprise me
+            </div>
+            <div>
+                <button>Submit</button>
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>
