@@ -51,48 +51,48 @@
   */
 
 
-// var names = ['Reed', 'Susan', 'Ben', 'Johnny', 'Franklin'];
+var names = ['Reed', 'Susan', 'Ben', 'Johnny', 'Franklin'];
 
-// console.log(names[0]);     //outputs 'Reed'
+console.log(names[0]);     //outputs 'Reed'
 
-// console.log(names[3]);     //outputs 'Johnny'
+console.log(names[3]);     //outputs 'Johnny'
 
-// Different Array
+Different Array
 
-// var pets = ['Moxxi', 'Pickle', 'Hootchie', 'Monkeybutt'];
-// console.log(pets);
+var pets = ['Moxxi', 'Pickle', 'Hootchie', 'Monkeybutt'];
+console.log(pets);
 
-// // pets.forEach() is a kind of loop for Arrays
+// pets.forEach() is a kind of loop for Arrays
 
-// pets.forEach(function(element){
-//   console.log(element);
-// });
+pets.forEach(function(element){
+  console.log(element);
+});
 
-//var fruits = ["Apple", "Banana", "Orange", "Apple", "Mango"];
+var fruits = ["Apple", "Banana", "Orange", "Apple", "Mango"];
 
-//var fruits = ["banana", "oranges", "peaches", "apples", "blueberries"];
+var fruits = ["banana", "oranges", "peaches", "apples", "blueberries"];
 
-// fruits.shift();  will remove the first item (banana)
-// fruits.pop(); will remove the last item
-// fruits.unshift(); will add an item to the begining of the Array
-// fruits.push(); will remove the last item from the Array
+fruits.shift();  will remove the first item (banana)
+fruits.pop(); will remove the last item
+fruits.unshift(); will add an item to the begining of the Array
+fruits.push(); will remove the last item from the Array
 
-// var numbers = [4, 9, 16, 25];
-// // Math.sqrt will squareroot the numbers within the Array
-// var squareRoots = numbers.map(Math.sqrt);
-// console.log(squareRoots);
-// // will divide numbers with in Array by 2
-// numbers.map(function(num){
-//   return num / 2;
-// })
+var numbers = [4, 9, 16, 25];
+// Math.sqrt will squareroot the numbers within the Array
+var squareRoots = numbers.map(Math.sqrt);
+console.log(squareRoots);
+// will divide numbers with in Array by 2
+numbers.map(function(num){
+  return num / 2;
+})
 
 
 
-// for(var i = 0; i < numbers.length; i++) {
-//   numbers[i] = numbers[i]*2;
-// }
+for(var i = 0; i < numbers.length; i++) {
+  numbers[i] = numbers[i]*2;
+}
 
-// console.log(numbers);
+console.log(numbers);
 
 
 // Objects Leture 2-05-2020
