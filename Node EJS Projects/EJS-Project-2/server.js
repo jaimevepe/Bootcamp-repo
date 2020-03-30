@@ -1,9 +1,6 @@
 const express = require('express');
 const app = express();
 
-app.set('views engine', 'ejs');
-app.set('views', __dirname + '/views');
-
 
 
 app.get('/', (req, res) => {

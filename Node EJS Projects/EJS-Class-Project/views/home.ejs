@@ -1,0 +1,22 @@
+<!-- includes HTML from header File -->
+<%-include ('partials/header') %> 
+
+<h1>Welcome to the Zoo</h1>
+<p>We have the following animals:</p>
+
+<% zoo.forEach(function(animal) { %>
+    <h3>
+       <%= animal.breed %>
+       <br>
+       <%= animal.owner.phone%>
+    </h3>
+<% }) %>
+
+<%for(let i = 0; i < zoo.length; i++) {%>
+    <h3>
+        <%=zoo[i].name%>
+    </h3>
+<%}%>
+
+<!-- includes HTML from footer.ejs file -->
+<%-include ('partials/footer') %>
