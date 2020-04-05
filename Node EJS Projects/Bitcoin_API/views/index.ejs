@@ -14,16 +14,19 @@
     <form action="/price">
         <input type="radio" 
         id="" 
+        value="USD"
         name="currency">
         <label>USD</label>
 
         <input type="radio" 
-        id="gbp" 
+        id=""
+        value="GBP" 
         name="currency">
         <label>GBP</label>
 
         <input type="radio" 
-        id="eur" 
+        id=""
+        value="EUR" 
         name="currency">
         <label>EUR</label>
 
@@ -31,6 +34,6 @@
     </form>
         <br>
         <h2>
-            This is the current price: 
+            This is the current price:<%- symbol%>  <%= rate%>
         </h2>
         
