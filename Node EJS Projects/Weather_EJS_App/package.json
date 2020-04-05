@@ -1,5 +1,5 @@
 {
-  "name": "bitcoin_be_pro2",
+  "name": "weather_ejs_app",
   "version": "1.0.0",
   "description": "",
   "main": "app.js",
@@ -11,7 +11,6 @@
   "dependencies": {
     "ejs": "^3.0.2",
     "express": "^4.17.1",
-    "node-fetch": "^2.6.0",
-    "nodemon": "^2.0.2"
+    "request": "^2.88.2"
   }
 }
