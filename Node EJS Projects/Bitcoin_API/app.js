@@ -9,31 +9,29 @@ let url = "https://api.coindesk.com/v1/bpi/currentprice.json"
 
 const port = process.env.PORT || 3000;
 
-app.get('/', (req, res)=>{
+app.get('/', (req, res) => {
     res.render("index.ejs");
 });
 
 app.get('/price', (req, res)=> {
     $fetch(url)
-    .then(response => {
-        if (!response.ok){
-            throw Error
+    .then(response =>{
+        if(!response.ok){
+            throw Error(response.statusText);
         }
-        console.log(response.json());
         return response.json();
     })
-    .then(data =>{
-        let currency = req.query.currency;
-        let rate = data.bpi[currency].rate_float;
-        console.log(`${rate}`);
-        res.render("index.ejs", {rate: rate});
+    .then(data => {
+        let rate = data.bpi[req.query.currency].rate_float.toFixed(2);
+        console.log(rate);
+        // res.render("index.ejs", {rate: rate});
     })
-    .catch(error =>{
-        console.error("Error from the network");
-        res.end();
+    .catch(error => {
+        console.error("Error from network");
+        // res.render("index.ejs", {error : "There was an Error"});
     })
 })
 
-app.listen(port,()=>{
+app.listen(port, () => {
     console.log(`Listening on port ${port}`)
 })
