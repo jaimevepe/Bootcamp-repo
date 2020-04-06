@@ -11,7 +11,7 @@
     <h1>
         Bit Coin Price App
     </h1>
-    <form action="/price">
+    <form>
         <input type="radio" 
         id="" 
         value="USD"
@@ -21,7 +21,8 @@
         <input type="radio" 
         id=""
         value="GBP" 
-        name="currency">
+        name="currency"
+        checked>
         <label>GBP</label>
 
         <input type="radio" 
@@ -30,10 +31,13 @@
         name="currency">
         <label>EUR</label>
 
-        <input class="btn" type="submit" value="Get Price">
+        <input class="btn" id="Btn" type="submit" value="Get Price">
     </form>
         <br>
         <h2>
-            This is the current price: <%- symbol%>  <%= rate%>
+            This is the current price: 
         </h2>
-        
+        <h2 id="price"></h2>
+        </div>
+        <script src="script.js"></script>
+        </body>

@@ -5,7 +5,7 @@
 .btn {
     background: darkblue;
     border-radius: 10px ;
-    margin-left: 25px;
+    margin-left: 20px;
     width: 100px;
     height: 40px;
     color: white;
@@ -14,7 +14,7 @@
 .con{
     width: 40vw;
     margin-top: 100px;
-    margin-left: 350px;
+    margin-left: 300px;
     padding: 20px;    
     background-color: cyan;
     border-radius: 5px;
