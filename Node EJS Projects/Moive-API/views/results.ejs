@@ -1,0 +1,14 @@
+<%-include('partials/header')%>
+<%-include('partials/navbar')%>
+
+<h1>The results page</h1>
+<% data.forEach(movie => {%>
+<div class="movie-info">
+    <h1> <%= movie.title%> </h1>
+    <p><%= movie.overview%></p>
+    <p>Release date: <%= movie.release_date%></p>
+    <p>Ratings <%= movie.vote_average%></p>
+    
+  
+</div>
+<%})%>
