@@ -5,7 +5,7 @@ app.use(express.static('public'));
 
 const $fetch = require('node-fetch');
 
-let url = "https://api.coindesk.com/v1/bpi/currentprice.json" // TODO: API endpoint
+let url = "https://api.coindesk.com/v1/bpi/currentprice.json" // TODO: API endpoint url
 
 const port = process.env.PORT || 3000;
 
@@ -16,7 +16,7 @@ app.get('/', (req, res) => {
 app.get('/price', (req, res)=> {
     $fetch(url)
     .then(response =>{
-        if(!response.ok){ // TODO: if not ok, stop and thro an error
+        if(!response.ok){ // TODO: if not ok, stop and throw an error
             throw Error(response.statusText);
         }
         return response.json(); //TODO: extract data from response and move to the next
