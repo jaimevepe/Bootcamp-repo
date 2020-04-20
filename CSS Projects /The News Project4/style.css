@@ -2,3 +2,34 @@
     padding: 0;
     margin: 0;
 }
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+nav.navbar{
+    color: grey;
+    background-color: #263238;
+    display: block;
+    height: 3rem;
+    position: fixed;
+    width: 100%;
+    
+}
+
+nav.navbar a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    background-color: #aaa;
+}
+li a{
+    background-color: #ddd;
+    display: block;
+}
+
