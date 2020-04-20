@@ -23,6 +23,7 @@ nav.navbar a{
 
 ul{
     list-style-type: none;
+    width: 80%;
 }
 
 li{
@@ -31,5 +32,16 @@ li{
 li a{
     background-color: #ddd;
     display: block;
+    text-decoration: none;
+    padding: 8px 12px;
 }
+
+li a:hover{
+    background-color: #555;
+    color: white;
+}
+
+/* li a.active{
+    background-color: rgb(168, 240, 136);
+} */
 
