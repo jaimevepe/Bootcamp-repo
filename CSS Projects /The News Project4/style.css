@@ -11,9 +11,9 @@ nav.navbar{
     color: grey;
     background-color: #263238;
     display: block;
-    height: 3rem;
+    height: 12vh;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     
 }
 
@@ -23,17 +23,23 @@ nav.navbar a{
 
 ul{
     list-style-type: none;
-    width: 80%;
+    width: 100%;
+    height: 2.5rem;
 }
 
 li{
-    background-color: #aaa;
+    background-color: #ccc;
+    height: 2.6rem;
+    width: 14vw;
+    float: left;
 }
+
 li a{
-    background-color: #ddd;
     display: block;
+    background-color: #ddd;
     text-decoration: none;
-    padding: 8px 12px;
+    padding-left:  0.25rem;
+    line-height: 2.5rem;
 }
 
 li a:hover{
@@ -41,7 +47,7 @@ li a:hover{
     color: white;
 }
 
-/* li a.active{
+li a.active{
     background-color: rgb(168, 240, 136);
-} */
+}
 
