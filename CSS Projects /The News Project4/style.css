@@ -11,30 +11,35 @@ nav.navbar{
     color: grey;
     background-color: #263238;
     display: block;
-    height: 12vh;
+    height: 5vh;
     position: fixed;
     width: 100vw;
+    z-index: 1;
     
 }
 
 nav.navbar a{
     text-decoration: none;
 }
+li.logo{
+    font-size: 1.7em;
+    text-align: center;
+}
 
-ul{
+nav.navbar > ul{
     list-style-type: none;
     width: 100%;
     height: 2.5rem;
 }
 
-li{
+nav.navbar > ul li{
     background-color: #ccc;
-    height: 2.6rem;
-    width: 14vw;
+    height: 2.54rem;
+    width: 14.28vw;
     float: left;
 }
 
-li a{
+nav.navbar > li a{
     display: block;
     background-color: #ddd;
     text-decoration: none;
@@ -42,12 +47,60 @@ li a{
     line-height: 2.5rem;
 }
 
-li a:hover{
+nav.navbar > li a:hover{
     background-color: #555;
     color: white;
 }
 
-li a.active{
+nav.navbar >li a.active{
     background-color: rgb(168, 240, 136);
 }
 
+ul.dropdown {
+    display: none;
+}
+/* > means, immidiate decendant  */
+ul.outer > li:hover > ul{
+    display: block;
+}
+
+ul.dropdown > li{
+    width: 16.5vw;
+}
+
+ul.outer > li:hover > ul li a:hover {
+    background-color: green;
+}
+
+div.maincontent{
+    position: relative;
+    top: 4rem;
+    margin: 0 2rem;
+    margin-bottom: 20%;
+}
+
+div.maincontent > p{
+    margin: 1rem 0;
+}
+
+div.footer{
+    position: fixed;
+    bottom: 0;
+    background-color: #444;
+    width: 100%;
+    height: 20%;
+    text-align: center;
+}
+
+div.footer > h3{
+    color: #ccc;
+    margin: 1rem auto;
+}
+div.footer > ul {
+    list-style: none;
+    display: block;
+    position: relative;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+}
