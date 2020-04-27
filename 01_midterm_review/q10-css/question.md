@@ -7,3 +7,5 @@ Also specificity which for me is sounds easy but really is a bit more difficult 
 1. What are some techniques you may use to make your pages more efficient with respect to the images used.  (Please restrict your reply only to strategies related to images on web pages) (50%)
 
 - I would say to resize huge images if its an image heavy site. Type of image file also helps with the rendering of an image. JPG uses less memmory so it renders much quicker rather then PNG files.
+
+<!-- Correct in that we should resize big images, but as for PNG vs JPG it seems that JPG is slower: https://stackoverflow.com/questions/14585241/are-there-differences-in-browser-loading-speeds-for-different-images-extension -->

@@ -4,10 +4,14 @@ What screen sizes are supported by bootstrap?
 - md for small laptops >= 900px
 - lg for laptops and desktops of 1200px
 
+<!-- Correct, there is also an xl class -->
+
 Please describe what would be the output of the following code snippet on mobile phone and on desktop computer, when using Twitter Bootstrap?  What would you expect to see?
 
 -For phones the output will take all 12 columns of the grid and will fit to screen since its supports xs size screen of 768 or less px.
 - For desktops the content will take 3 columns of the gird, will display screen width of whatever PX it is.
+
+<!-- Incorrect -->
 
 ```
     <div class="row">

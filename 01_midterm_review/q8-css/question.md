@@ -11,6 +11,8 @@ What color would you expect the item Sweet Halwa to show as and why?
 What color would you expect the item "Sausage" to show as and why?
 - Blue, Id overrides classes, and it comes after the first selector.
 
+<!-- Correct. It actually wouldn't matter what order they were written in -->
+
 <div>
    <img src="images/a.png" width=90%>
 </div>

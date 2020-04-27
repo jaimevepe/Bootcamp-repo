@@ -7,3 +7,5 @@
 
 ### Answer:
 1. The `setTimeout` function is used to run callback `cb` after at least `ms` milliseconds.
+
+<!-- It is actually all of the above -->

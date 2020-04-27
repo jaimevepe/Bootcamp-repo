@@ -14,3 +14,6 @@
 what ever is selected using flex-direction row, will be positioned horizontally.
 
 4. flex-direction: row; this will position elements vertically
+
+
+<!-- Incorrect -->

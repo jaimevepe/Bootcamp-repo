@@ -5,3 +5,5 @@
 1. Give at least 2 other reasons why git/github are useful to a team of developers.
 
 - It is useful since the Repo can be public and as one team member works on project, he can push it and the next team member can pull it and work on it some more.
+
+<!-- Correct, multiple people can work on the same project at one time -->

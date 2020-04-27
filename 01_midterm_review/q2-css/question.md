@@ -6,3 +6,4 @@ What do the following CSS selectors select?
     div > p - selects all p elements whose parent is a <div>
     div ~ p - selects every p element that are preceded by a <div>
 
+<!-- Correct -->

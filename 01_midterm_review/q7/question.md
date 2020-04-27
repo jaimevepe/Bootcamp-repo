@@ -29,3 +29,5 @@ const newAr = (arr) => {
   } return newArr;
 }
 console.log(newAr(myArray));
+
+<!-- This function does not empty myArray it returns a new empty array -->
