@@ -11,7 +11,7 @@ Please describe what would be the output of the following code snippet on mobile
 -For phones the output will take all 12 columns of the grid and will fit to screen since its supports xs size screen of 768 or less px.
 - For desktops the content will take 3 columns of the gird, will display screen width of whatever PX it is.
 
-<!-- Incorrect -->
+<!-- Correct, but what does "will display screen width of whatever PX it is." refer to? -->
 
 ```
     <div class="row">
