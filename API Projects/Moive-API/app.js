@@ -10,7 +10,7 @@ app.get('/', (req, res)=> {
     res.render('home.ejs');
 })
 
-app.get('/movies', (req, res)=>{
+app.get('/movies', (req, res)=>{ // Sending through URL/ anyone can see
     let endpoint = 'https://api.themoviedb.org/3/movie/now_playing?api_key=da387bef20fb7cc25d1f59550606e2c4'
     $fetch(endpoint)
     .then(response =>{
