@@ -36,7 +36,7 @@ $('input').keypress(function(event) {
       .done(function(newTodo){ 
         let completed = newTodo.isComplete ? "completed" : "";
         $('ul').append(
-            `<li data-id=${newTodo._id} class=${completed}>${newTodo.description}<span>X</span></li>`
+            `<li data-id=${newTodo._id} class=${completed}>${newTodo.description}<span><i class='far fa-trash-alt'></i></span></li>`
         );
         $('input').val(""); // moved the "" to within the parentheses
       })
