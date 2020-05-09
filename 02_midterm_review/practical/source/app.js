@@ -4,6 +4,8 @@ var app = express();
 
 // To be able to use CSS
 app.use(express.static('plublic'));
+const request = require('request');
+// const $fetch = require('node-fetch');
 
 const port = process.env.PORT || 3000;
 
@@ -12,9 +14,19 @@ app.get('/', function(req, res) {
     res.render('home.ejs');
 });
 
+
 // render results
 app.get('/results', function(req, res) {
-
+    let endpoint = 'http://swapi.dev/api/people/'; // star wars characters endpoint
+    let id = req.query.userName;
+    let url = `${endpoint}/${id}`;
+    request(url, (error, response, body)=>{
+        console.log("Response: ", response)
+        if(!error, response, body){
+        let charac = JSON.parse(body);
+        res.render("results.ejs", {data: charac})
+        }
+    })
     // fill out the code here which calls the Star Wars api end point
     // gets the data and then renders the results.ejs page.
 
