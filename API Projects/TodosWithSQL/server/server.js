@@ -2,10 +2,10 @@
 const express = require("express");
 const app = express();
 
-const logger = require("morgan");
-app.use(logger("dev"));
+const logger = require("morgan"); // morgan is a loggar on the terminal
+app.use(logger("dev")); // telling app/express to use morgan(logger) in a 'dev' setting
 
-const bodyParser = require("body-parser");
+const bodyParser = require("body-parser"); // body-parser is needed when using POST
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -16,6 +16,8 @@ const cors = require('cors')
 app.use(cors())
 
 const port = process.env.PORT || 3000;
+
+
 // this loads the index.html from ../client folder
 // and exposes everything with in the folder to any browser
 app.use(express.static('../client')) // ../ will to to the parent folder level, then go down one to find client folder
@@ -23,9 +25,9 @@ app.use(express.static('../client')) // ../ will to to the parent folder level, 
 
 
 // Connecting to a SQL Database
-const { Client } = require('pg');
+const { Client } = require('pg'); // PostgreSQL
 
-let connectionObject = {
+let connectionObject = { // what we need to access the DB
   host: "pgdb.accsoftwarebootcamp.com",
   database : "accsoftwarebootcamp",
   port: 5432,
@@ -56,7 +58,9 @@ app.get("/todos", function(req, res) { //sends through the URL/anyone can see it
                 iscomplete AS "isComplete"
               FROM todos.todos
                 ORDER BY todos.id;`
+  // query will SELECT id, description, iscomplete from todos table in DB
   client.query(query, function(error, result){
+  // connecting query to DB to pull results from Db
     if(error){
           console.log('Error: ', error)
         } else {
