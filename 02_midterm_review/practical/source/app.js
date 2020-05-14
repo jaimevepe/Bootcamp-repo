@@ -1,4 +1,4 @@
-// require needed modules
+// require needed modules after npm installing
 var express = require('express');
 var app = express();
 
@@ -18,33 +18,37 @@ let endpoint = 'http://swapi.dev/api/people'; // star wars characters endpoint
 
 // render results
 app.get('/results', function(req, res) {
-    //need to manipulate endpoint so it takes the input as :id
     let id = req.query.userNumber
+    // need to manipulate endpoint takes the input id
+    
     let url = `${endpoint}/${id}/`
-    //fetch data from the SWAPI endpoint
+    // url will now be endpoint and id
+
+    //fetch data from the API endpoint
+
     $fetch(url)
-    //get the JSON obj from API and throw error if there is anything wrong with the connection
     .then(response => {
         if (!response.ok) {
-            // if respnse is not ok--> throw error
+            // if response is not ok then it will throw error
           throw Error(response.statusText);
         }
-        //if ok, return JSON obj
+        //if ok, return JSON obj then move to the next
         return response.json();
       })
-      //extract the info I need to show on results.ejs- should display the name, height, and hair color of that character.
     .then(data => {
-        //changed {data : data.results} to just {data. data} bc reults returns undefined bc I don't need a property if only one obj is being returned
         res.render('results.ejs', {data: data})
+        console.log(data)
+        // use data.name and everything else in results.ejs page
     })
-    //console log any error messages to help debug
-    .catch(error => {
+    .catch(error => {    //console log any error msg
+
         console.error("Error from network: ", error),
-        //end process if err
+        //end cycle process
         res.end()
     })
 
 
+// used request but didnt work out for me
 
     // let id = req.query.userName;
     // let url = `${endpoint}/${id}/`;
@@ -64,7 +68,7 @@ app.get('/results', function(req, res) {
     // to make the call to the sw api.
 
 });
-
+ // for localhost 3000 on browser
 app.listen(3000, function() {
     console.log("Star Wars backend running on port 3000");
 });
