@@ -8,3 +8,7 @@
 ### Answer:
 
 1. join a table to itself, using same column
+
+Feedback -> Incorrect - join a table to itself using different columns
+
+Remember the self join from the SQL slides - employee table, we joined to itself using the emp_id with with mgr_id

@@ -26,3 +26,10 @@ Object.keys() creates an array containing the keys of an object and can be used 
 
 star.getName works because getName is with in the star Object, and .getName is the right key to get the value. **
 
+Feedback -> Partial credit - 25%
+
+undefined 'Julia Roberts'
+
+because 'this' is the global object in the last line
+where the starsName() is called.
+

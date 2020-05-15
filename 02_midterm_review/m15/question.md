@@ -15,3 +15,7 @@
 
 ** Javascript Read from top to bottom
 the function that returned 2 was the last function JS read and returned **
+
+Feedback -> Partial - 25%
+
+second definition overwrites the first and only then the execution happens
