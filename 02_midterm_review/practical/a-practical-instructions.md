@@ -29,3 +29,9 @@ The front-end code is provided to you as EJS files.  You need to complete the ba
 Complete any additional configuration or install any necessary libraries to get this working.
 
 Fix any bugs that may have been introduced so your code is working.
+
+Feedback -> Overall, great job. - 32/34 points.
+Good job on the comments - the reson I took off a couple points is that your links do not work.
+
+Issues: 
+1) Your routes are wrong in your footer.ejs. You have `/home.ejs` for the Home link BUT you have NO /home.ejs route handler. what you should have done is use '/' (root route) for the home link? And why are you trying to go to the results page? Wont the data be different each time?
