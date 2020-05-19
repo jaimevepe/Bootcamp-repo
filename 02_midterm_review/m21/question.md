@@ -7,3 +7,7 @@
 1. specifies what language a client will accept
 
 ### Answer:
+
+Feedback -> Incorrect - Not answered - 5. specifies what language a client will accept
+
+(there's a separate header for specifying language a client prefers)

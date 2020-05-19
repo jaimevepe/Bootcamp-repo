@@ -1,3 +1,7 @@
+Final score - 75.5 - Congrats!!!
+
+
+
 <center>
 
 ### ACC Software Bootcamp - Midterm Review

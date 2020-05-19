@@ -12,3 +12,5 @@ Choose all correct answers. All answers needed for full credit.
 
 ### Answer:
 used with sensitive data
+
+Feedback -> Partial credit 50% - also used with files

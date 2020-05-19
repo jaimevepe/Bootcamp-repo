@@ -13,3 +13,5 @@ in a child table & refers to the PK in the parent table
 possibly null
 possibly has duplicates in the column it belongs to
 
+Feedback -> Correct
+
