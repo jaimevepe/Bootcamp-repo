@@ -11,3 +11,5 @@ Reference: https://developer.mozilla.org/en-US/docs/Learn/Forms/Sending_and_retr
 
 ### Answer:
 it makes a POST request to the same url of the website where the form is hosted.
+
+Feedback -> Correct

@@ -10,3 +10,5 @@ There may be multiple right answers. Indicating all of the right answers and non
 ### Answer:
 1. db.restaurants.find({ "borough" : { $eq : "Queens" }})
 1. db.restaurants.find({ "borough" : "Queens" })
+
+Feedback -> Correct
