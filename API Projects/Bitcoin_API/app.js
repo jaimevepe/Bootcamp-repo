@@ -23,9 +23,9 @@ app.get('/price', (req, res)=> {
     })
     .then(data => {
         let rate = data.bpi[req.query.currency].rate_float.toFixed(2); // TODO: currency is the name="currency" on inputs
-        let symbol = data.bpi[req.query.currency].symbol;    // Always have the value attribute on input or else data wont be sent
+        let symbol = data.bpi[req.query.currency].symbol;    // Always check to have the value attribute on input or else data wont be sent
         console.log(rate);
-        res.render("index.ejs", { rate, symbol }); //TODO: same as {rate: rate} and {symbol: symbol}
+        res.render("index.ejs", { rate: rate, symbol: symbol }); //TODO: same as {rate: rate} and {symbol: symbol}
     })
     .catch(error => {
         console.error("Error from network");
