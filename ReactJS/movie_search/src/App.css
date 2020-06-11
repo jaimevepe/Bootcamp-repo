@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+#inputField {
+  margin: auto;
+  font-size: 24px;
+  display: block;
+  width: 70%;
+  padding: 8px 16px;
+}
+
+
+
+.container {
+  margin: 10px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h1 {
+  text-align: center;
+}
