@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
 import '../App.css';
 
+import TodoList from './TodoList'
+import ShowAll from './ShowAll'
+
 class TodoApp extends Component {
 
   addItem = event => {
@@ -34,7 +37,18 @@ class TodoApp extends Component {
 
         </form>
 
-              
+        <div>
+          <TodoList
+            items={this.props.items}
+            toggleItemCompletion={this.props.toggleItemCompletion}
+          />
+        </div>
+
+        <div>
+          <ShowAll showAll={this.props.showAll}/>
+        </div>
+
+    
       </div>
     )
   }
