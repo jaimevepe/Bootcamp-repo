@@ -1,4 +1,7 @@
 -- 1)
+-- Please find all employees that have a salary greater than 3000 and less than 4000
+-- using AND operator
+-- using BETWEEN operator
 -- using AND
 SELECT * FROM employees WHERE salary > 3000 AND salary < 4000;
 
@@ -6,6 +9,9 @@ SELECT * FROM employees WHERE salary > 3000 AND salary < 4000;
 SELECT * FROM employees WHERE salary BETWEEN 3000 AND 4000;
 
 -- 2)
+-- Please find all employees that have a salary greater than 8000, and those hired after 1996 (use implicit conversion of a date as a string to the DATE type).
+-- Create a separate query to find the lowest salary in the company (look for a SQL math function from references or Google search which allows you find the minimum in a set or a column).
+-- In the first query you wrote above, please also report the employee's total compensation (salary + commission, if any) as a percentage of the minimum salary in the company from the #2 above.
 -- finds employees with last_name longer than six characters and then displays
 -- query starting with ONLY the first 6 letters of last_name
 SELECT
@@ -51,6 +57,12 @@ WHERE salary > 8000
   AND hire_date > '31-Dec-1996';
 
 -- 4)
+-- List the full names and their department names of the all employees in the "bootcamp" database. 
+-- Do the same for the employees that work for department "Sales". Order the results by hiring date 
+-- with the most recent hires at the top.
+
+-- Hint: you may NOT look up the department_id of "Sales", but use the text "Sales" in the query. 
+-- Do something like ... WHERE department_name = 'Sales'
 SELECT
   CONCAT(first_name, ' ', last_name) AS "Full Name", -- concatenates for full name
   department_name AS "Department",
@@ -81,7 +93,9 @@ WHERE department_name = 'Sales'
 ORDER BY hire_date DESC;
 
 -- 5)
+-- List the first, last, email, department name and city of all employees that are Execs.
 
+-- Hint: Join between EMPLOYEES, DEPARTMENTS and LOCATIONS using DEPARTMENT_NAME = 'appropriate department name'.
 -- no matter from which tables, all SELECTS go here
 SELECT
   first_name AS "FIRST",
@@ -101,6 +115,11 @@ WHERE department_name = 'Executive';
 
 
 -- 6)
+-- To the above query, add the manager's first name to the column list.
+
+-- Hint: add a self join to the EMPLOYEES table all over again giving it a different alias.
+
+-- Make changes so that all 22 employees are listed (for this requirement, think about using outer joins. You may wait till we have covered outer joins in class.)
 
 -- Shows ALL employees with their dept, city and manager
 -- no matter from which tables, all SELECTS go here
@@ -150,6 +169,11 @@ LEFT JOIN locations l
 ORDER BY "DEPT" NULLS FIRST;
 
 -- 7)
+-- Find out how many employees were hired in each year. List years and counts of employees hired in those years. See sample output below.
+
+-- Hint: use grouping after extracting the year of hire.
+
+-- Then leave out those who years where less than 2 employees were hired, while ordering the results chronologically.
 SELECT
 -- extracts just the year from the hire date and assigns alias
   EXTRACT(year FROM hire_date) AS year_of_hiring,

@@ -5,7 +5,7 @@ import '../App.css';
 
 class SearchBox extends Component {
   handleChange = event => {
-    this.props.updateSearch(event.target)
+    this.props.updateSearch(event.target.value)
   }
     render() {
         return (
