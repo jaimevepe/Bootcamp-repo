@@ -5,7 +5,7 @@ import '../App.css';
 
 class TodoList extends Component {
     render() {
-      // console.log('My Props are: ', this.props)
+      console.log('My Props are: ', this.props)
         return (
           <div>
             {
