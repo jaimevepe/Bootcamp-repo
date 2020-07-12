@@ -29,16 +29,12 @@
 </div>
 
 <% data.forEach(gif => { %>
-<div class="d-flex justify-content-center d-flex flex-row bd-highlight mb-3">
-    <div class="row">
-        <div class="col-sm col-6">
-            <h1> <%= gif.username %> </h1>
-            <div class="col-sm col-6">
-                <img src="<%= gif.images.original.url %>" >
-            </div>
-            
-        </div>
-    </div>
+<div class="d-flex justify-content-center">
+      
+    <img class="d-flex flex-row"
+        style="display: flex; flex-direction: row; margin: 10px; border: solid 5px black" 
+        src="<%= gif.images.original.url %>" >
+
 </div>
   <% }) %>
     
