@@ -19,23 +19,24 @@ var test = "Helo"
 
 console.log(`${test} ${isIsogram(test) ? "is" : "is not"} an isogram.`)
 
+//----------------------------------------------------//
 
 function isIsogram(string){
      var myArr = string.toLowerCase().split("")//took out the forEach
 
-     var myObj = {}; //creating an empty object so we can loop through it 
+     var Obj = {}; //creating an empty object so we can loop through it 
 
         for (i = 0; i < myArr.length; i++){
                                // testing properties for each unique letter
-            if (myObj[myArr[i]]){
+            if (Obj[myArr[i]]){
                 return false; // if a repeat letter found, then not an isogram
             }
-            myObj[myArr[i]] = true; // if not found, then the property is set to true
+            Obj[myArr[i]] = true; // if not found, then the property is set to true
         }
         console.log('true')
         return true;
             };
-            
+
 var test = "Hello"
 
 console.log(`${test} ${isIsogram(test) ? "is" : "is not"} an isogram.`)
