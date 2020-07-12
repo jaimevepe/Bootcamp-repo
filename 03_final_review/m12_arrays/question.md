@@ -18,4 +18,4 @@ function test(myArr) {
 3. search
 
 ### Answer: 
-2. findIndex
+1. find

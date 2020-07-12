@@ -12,4 +12,3 @@
 4. none of the above
 
 ### Answer: 
-4. none of the above
