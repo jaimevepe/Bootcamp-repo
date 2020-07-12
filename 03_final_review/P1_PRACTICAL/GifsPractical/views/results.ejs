@@ -18,19 +18,28 @@
     
     <form action="/gifs" method="GET">
 
-        <input type="text" name="search" class="form-control col-6" /> 
-
-        <button type="submit" class="btn btn-danger" >SEARCH</button>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" name="search" placeholder="Search Giphys" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <div class="input-group-append">
+              <button class="btn btn-danger" type="submit" id="button-addon2">Search</button>
+            </div>
+          </div>
 
     </form>
 </div>
 
 <% data.forEach(gif => { %>
-    <div>
-  
-        <h1> <%= gif.username %> </h1>
-        <img src="<%= gif.images.original.url %>" >
+<div class="d-flex justify-content-center d-flex flex-row bd-highlight mb-3">
+    <div class="row">
+        <div class="col-sm col-6">
+            <h1> <%= gif.username %> </h1>
+            <div class="col-sm col-6">
+                <img src="<%= gif.images.original.url %>" >
+            </div>
+            
+        </div>
     </div>
+</div>
   <% }) %>
     
 

@@ -7,7 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="styles.css">
     <title>GiphyPractical</title>
   </head>
   <body>
@@ -17,9 +17,12 @@
     
     <form action="/gifs" method="GET">
 
-        <input type="text" name="search" class="form-control col-6" /> 
-
-        <button type="submit" class="btn btn-danger" >SEARCH</button>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" name="search" placeholder="Search Giphys" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-danger" type="submit" id="button-addon2">Search</button>
+        </div>
+      </div>
 
     </form>
 </div>
