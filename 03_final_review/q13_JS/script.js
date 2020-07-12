@@ -15,7 +15,7 @@ function isIsogram(str){
     return true; 
 }
 
-var test = "Helo"
+var test = "Hello"
 
 console.log(`${test} ${isIsogram(test) ? "is" : "is not"} an isogram.`)
 
@@ -26,12 +26,12 @@ function isIsogram(string){
 
      var Obj = {}; //creating an empty object so we can loop through it 
 
-        for (i = 0; i < myArr.length; i++){
+        for ( let i = 0; i < myArr.length; i++){
                                // testing properties for each unique letter
             if (Obj[myArr[i]]){
-                return false; // if a repeat letter found, then not an isogram
+                return false; // if a letter repeats then not an isogram || false
             }
-            Obj[myArr[i]] = true; // if not found, then the property is set to true
+            Obj[myArr[i]] = true; // if letters dont repeat, then true
         }
         console.log('true')
         return true;
