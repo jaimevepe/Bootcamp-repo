@@ -9,3 +9,9 @@ The big differences between relational (aka SQL databases) and document based da
 
 ### Answer:
 3. Both allow specifying logical relations between entities (douments or tables), but relational databases enforce these constraints.
+
+
+### Feedback:
+
+All of these statements are correct. If you selected 2. that there are no functions
+in the db, I'd still grant this question as system functions were introduced in recent versions.

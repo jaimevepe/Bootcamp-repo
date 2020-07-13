@@ -9,3 +9,7 @@
 ### Answer:
 
 1. `span` is an display:inline element, whereas `div` is a display:block element
+
+### Feedback:
+
+I'll give this to you. However, 3. is also true. That is kinda definition of inline.
