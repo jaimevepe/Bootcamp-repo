@@ -11,3 +11,7 @@ Which of the following are some of the new features of HTML5 over the previous H
 ### Answer:
 
 5. All of the above.
+
+### Feedback:
+
+Correct

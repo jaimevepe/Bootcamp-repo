@@ -11,3 +11,7 @@ https://jsbin.com/yohivodobe/edit?html,output
 1. Why can I not set the margin-top on the img with the id "pic" in the head section?
 
 -Because the inline styling is overwriting the head section styling.
+
+### Feedback:
+
+Accepted.

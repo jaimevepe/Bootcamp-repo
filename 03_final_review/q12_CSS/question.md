@@ -23,3 +23,11 @@ Divs are block and spans are inline, you can place a span inside a div, but a di
 - display:none; or visibility: hidden; this will remove text from the flow of the page.
 width: 0px, height:0px; will also remove text from the the flow of the page and will be ignored by the readers.
 text-indent: -10000px; will move text or content to the left 10000 pixels, moving it out of the screen.
+
+
+### Feedback:
+
+Accepted. 
+
+I'm very glad you took the effort to answer 4. There are minor language issues
+with the answers, but the answers are acceptable.

@@ -16,3 +16,8 @@ For arrays I could use forEach or a regular loop.
 myArray.forEach(stuff => {
     console.log(stuff)
 })
+
+
+### Feedback:
+
+Accepted.

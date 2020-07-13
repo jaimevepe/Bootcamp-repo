@@ -17,3 +17,6 @@ What new ES6 method replaces the above annoying piece of code?
 
 ### Answer:
 4. None of the above
+
+### Feedback:
+Not correct. The correct answer is 3. someText.includes()
