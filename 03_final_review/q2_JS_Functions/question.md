@@ -12,4 +12,3 @@ See example below ...
 
 In the above example, the function should return 7.
 
-#Skipped
