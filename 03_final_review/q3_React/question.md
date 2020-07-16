@@ -5,3 +5,13 @@ and in its JSX it renders that specific state variable within the h1 "Hello {nam
 It should work like this when done:
 
 <img src="./assets/React-State-Demo.gif" width="400px">
+
+### Feedback
+
+You should create a function in the Parent that changes the state based on an input
+value. 
+
+Then create another function in the Child which calls the this.props.functionName from
+the Parent, passing in the event.target.value.
+
+This doesn't work or come close.
