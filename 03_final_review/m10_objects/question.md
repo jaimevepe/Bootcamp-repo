@@ -8,3 +8,10 @@
 ### Answer:
 1. delete myObj[key]
 4. delete myObj.key
+
+
+### Feedback:
+
+1 is correct but 4 is not. 
+4 would be correct if the key was called "key". That is not correct.
+Score 1/2

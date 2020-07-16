@@ -10,3 +10,7 @@ In CSS3, how would you select:
 
 What is the purpose of the z-index and how is it used? What possible values does the z-index take (e.g. one of those is "auto")?
 
+
+### Feedback:
+
+Did you skip this as well? I am not seeing the answer.

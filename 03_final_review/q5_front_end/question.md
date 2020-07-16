@@ -6,3 +6,7 @@ Please write, test and copy here code that would create a navigation bar and pin
     <nav class="navbar navbar-dark bg-primary sticky-top">
     <p>Navbar</p><!-- Navbar content -->
       </nav>
+
+### Feedback:
+
+Accepted.

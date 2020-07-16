@@ -12,6 +12,7 @@ const port = process.env.PORT || 3000;
 app.get('/', (req, res) => {
     res.render("index.ejs")
 })
+
 const apiKey = "api_key=pLT2uNg7qgI2DHqMFP4pTCNQmDDoE4JP&limit=10&offset=0&rating=r&lang=en"
 const endpoint = "https://api.giphy.com/v1/gifs/search?"
 

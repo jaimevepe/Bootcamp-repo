@@ -8,3 +8,7 @@
 ### Answer:
 
 1. you need a large number of images on a page, e.g. on a carousel.
+
+### Feedback:
+
+Correct
