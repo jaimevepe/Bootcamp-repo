@@ -13,5 +13,4 @@ Which of the following are some of the new features of HTML5 over the previous H
 5. All of the above.
 
 ### Feedback:
-
-Correct
+I'll give it to you, but 3 is only partly true. 
