@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="content">
+        <h3 class="header">The Job Of Your Dreams</h3>
+        <h5>Sofware Developer - Dream Company</h5>
+        <h6>Software Development - United States</h6>
+        
+        <p>Thank you for considering a career at Dream Company. Please take a minute to fill out the following form.</p>
+        <hr class="my-4">
+        <div class="">
+            <form action="/submit" method="POST">
+                <div class="form">
+                    <label for="fname">First Name*</label>
+                    <input type="text" name="fname" size="20">
+                </div>
+
+                <div class="form">
+                    <label for="lname">Last Name*</label>
+                    <input type="text" name="lname" size="20">
+                </div>
+
+                <div class="form">
+                    <label for="email">Email*</label>
+                    <input type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                </div>
+
+                <div class="form">
+                    <label for="phone">Phone</label>
+                    <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    required size="10">
+                    <p>Format 555-555-555</p>
+                </div>
+
+                <div class="form">
+                    <label for="country">Country*</label>
+                    <select id="country" name="country">
+                        <option value="United States of America">United States of America</option>
+                        <option value="Mexico">Mexico</option>
+                        </select>
+                </div>
+                <br>
+                <div class="form">
+                    <label for="age">Are you at least 18 years of age?*</label>
+                    <input type="checkbox" name="age">
+                </div>
+
+                <div class="form">
+                    <p>Upload Resume</p>
+                    <input type="file" name="resume">
+                </div>
+                <br>
+                <button class="btn btn-primary" type="submit">Submit</button>
+            </form>
+        </div>
+        
+      </div>
+    
+</body>
+</html>
